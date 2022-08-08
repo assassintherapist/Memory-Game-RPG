@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How To Play</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Mouse Memoirs', sans-serif;
+    }
+
+    body{
+      background: url("img/bg_all.png");
+      background-position: top;
+      background-repeat:repeat;
+      background-size: 2000px;
+    }
+
+    button{
+      position: absolute;
+      cursor: pointer;
+      top: 40px;
+      left: 40px;
+      font-size: 30px;
+      width: 60px;
+      background: none;
+      font-weight: bold;
+      border: none;
+      color: rgb(223, 39, 39);
+      border-radius: 10px;
+    }
+
+    .headTitle{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+      background-position: center;
+      background-size: 20vh;
+      font-family: 'Mouse Memoirs', sans-serif;
+      font-weight: bold;
+      font-size: 35px;
+      color: rgb(39, 17, 237);
+    }
+
+    .content{
+      color: rgb(238, 223, 223);
+      font-weight: bold;
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      font-size: 20px;
+      font-family: 'Mouse Memoirs', sans-serif;
+    }
+
+    .imgGame{
+      position: absolute;
+      left: 65%;
+    }
+
+    .imgGame2{
+      position: absolute;
+      top: 330px;
+      left: 100px;
+    }
+
+    .imgQM{
+      position: absolute;
+      top: 350px;
+      left: 250px;
+    }
+
+    .imgGame1{
+      position: absolute;
+      left: 38%;
+      top: 350px;
+    }
+
+    .imgGame3{
+      position: absolute;
+      top: 350px;
+      left: 370px;
+    }
+
+    .imgGame4{
+      position: absolute;
+      top: 420px;
+      left: 1100px;
+    }
+
+    .imgGame5{
+      position: absolute;
+      top: 580px;
+      left: 1750px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header class="headTitle">
+    <h1 class="title">How To Play</h1>
+  </header>
+
+  <div class="buttons">
+    <button onclick="goBack()">
+      <span class="material-symbols-outlined">arrow_back_iosBack</span>
+    </button>
+  </div>
+
+  <div class="content">
+    <h2>The game’s premise is simple – match two of the same cards. But successfully doing so is where the difficulty lies in this game.</h2>
+    <br><br><br><br>
+    <h2>On every level, the enemy and the cards will not be the same. The more you go the more cards will appear.</h2>
+    <br><br><br><br><br><br><br>
+    <h2>There is also hearts that is given to you, You will only have 3 hearts while the enemy will have more the more you go.</h2>
+    <br><br><br><br>
+    <h2>You also have to look out for the timer when the enemy will attack. Each attack of the enemy will decrease your life by 1 and when you match all the cards the enemy's life will decrease by 1.</h2>
+    <br><br>
+    <h1>And ENJOY!</h1>
+  </div>
+
+  <div class="imgGame">
+    <img src="img/th (1).jfif" alt="game" width="300px" height="170px">
+  </div>
+
+  <div class="imgGame1">
+   <img src="img/dba3ceacef090f0f6812be3ec739e735.jpg" alt="game1" width="100px" height="120px">
+  </div>
+
+  <div class="imgQM">
+    <img src="img/wikimedia-foundation-question-mark-mediawiki-wikimedia-commons-fragezeichen-removebg-preview.png" alt="imgqm" width="80px">
+  </div>
+
+  <div class="imgGame3">
+    <img src="img/1000_F_298276194_1wPeLgGGnUjCMQiL4CoAK3MH4qgls2lj.jpg" alt="games" width="300px" height="130px">
+  </div>
+
+  <div class="imgGame2">
+    <img src="img/c6ecdbbce9a5a87214e16404454cf901910413ba.gif" alt="game2" width="250px" height="150px">
+  </div>
+
+  <div class="imgGame4">
+    <img src="img/240_F_298275621_pqyMxolNDu4Yyj8YhmZmy01xv0e7lXNQ-removebg-preview.png" alt="life" width="200px" height="200px">
+  </div>
+
+  <div class="imgGame5">
+    <img src="img/digital-timer-with-pixel-art-style_475147-711.webp" alt="timer" width="100px" height="110px">
+  </div>
+
+  <script>
+    function goBack(){
+      window.location.href="menu.html"
+    }
+  </script>
+
+</body>
+</html>
