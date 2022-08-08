@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background: url('img/giphy\ \(1\).gif');
+      background-repeat: repeat-x;
+      background-size: 80%;
+      font-family: 'Mouse Memoirs', sans-serif;
+    }
+
+    h1{
+      position: absolute;
+      left: 40%;
+      top: 20%;
+      color: rgb(212, 220, 227);
+      font-weight: bold;
+      font-size: 80px;
+    }
+    
+    .startGame{
+      position: absolute;
+      left: 46%;
+      top: 40%;
+      border: none;
+      background-color: rgb(41, 195, 54);
+      font-size: 40px;
+      width: 150px;
+      height: 50px;
+      background-position: center;
+      font-family: 'Mouse Memoirs', sans-serif;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .startGame:hover{
+      transform: scale(1.2);      
+      background: url("img/15c5afa3aa7ab76db49aa561bc976aa1.jpg");
+      background-repeat: auto;
+      background-size: cover;
+      background-size: 90px;
+    }
+
+    .tutorial{
+      position: absolute;
+      left: 855px;
+      top: 50%;
+      border: none;
+      background-color: rgb(19, 43, 230);
+      font-size: 40px;
+      width: 210px;
+      height: 50px;
+      background-position: center;
+      font-family: 'Mouse Memoirs', sans-serif;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .tutorial:hover{
+      transform: scale(1.2);      
+      background: url("img/th.jfif");
+      background-repeat: auto;
+      background-size: cover;
+      background-size: 70px;
+    }
+
+    .credits{
+      position: absolute;
+      left: 46%;
+      top: 60%;
+      border: none;
+      background-color: rgb(195, 41, 74);
+      font-size: 40px;
+      width: 150px;
+      height: 50px;
+      background-position: center;
+      font-family: 'Mouse Memoirs', sans-serif;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .credits:hover{
+      transform: scale(1.2);      
+      background: url("img/94f493735afda7d0c75e749f288bf15a.jpg");
+      background-repeat: auto;
+      background-size: cover;
+      background-size: 90px;
+    }
+    
+    .playerImg{
+      position: absolute;
+      top: 40%;
+      left: 13%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Memory Game RPG</h1>
+  
+  <div class="content">
+    <button class="startGame" onclick="startGame()">Start</button>
+    <button class="tutorial" onclick="tutorial()">How To Play?</button>
+    <button class="credits" onclick="credits()">Credits</button>
+  </div>
+
+  <div class="playerImg">
+    <img src="img/d7b3da3d4b19b7f0c44673374158df0a.gif" alt="">
+  </div>
+
+  <div class="bgMusic">
+    <audio autoplay="true" src="audio/xDeviruchi - Title Theme .wav" loop></audio>
+  </div>
+
+  <script>
+    function startGame(){
+      window.location.href="level1.html"
+    }
+
+    function credits(){
+      window.location.href="credits.html"
+    }
+
+    function tutorial(){
+      window.location.href="tutorial.html"
+    }
+  </script>
+
+</body>
+</html>
