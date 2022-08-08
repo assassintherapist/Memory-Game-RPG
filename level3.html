@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game RPG</title>
+  <link rel="stylesheet" href="level3.css">
+  <script src="level3.js" defer></script>
+</head>
+<body>
+
+  <section class="timeUntilAttack">
+    <div id="timer">
+        00:00
+    </div>
+    <div id="timeName">
+      Enemy Attacks In:
+    </div>
+  </section>
+
+  <section class="player&enemy">
+    <div id="enemy">
+      <h1>Enemy Health</h1>
+    </div>
+    <div id="enemyLifeBar">
+     <img src="img/240_F_298275621_pqyMxolNDu4Yyj8YhmZmy01xv0e7lXNQ-removebg-preview.png" alt="playerHealth">
+    </div>
+    <div id="enemyHealth">
+      <div>x 5</div>
+    </div>
+    <div id="player">
+      <h1>Player Health</h1>
+    </div>
+    <div id="playerLifeBar">
+      <img src="img/240_F_298275621_pqyMxolNDu4Yyj8YhmZmy01xv0e7lXNQ-removebg-preview.png" alt="enemyHealth">
+    </div>
+    <div id="playerHealth">
+      <div>x 3</div>
+    </div>
+  </section>
+
+  <section class="enemy-container">
+    <div class="enemy-image">
+      <img src="img/7f28a62f49535a89cb394d4672bad4b5.png" alt="foe">
+    </div>
+  </section>
+
+  <section class="effects">
+    <div class="slash">
+      <img src="img/Demon-awakening-effect-slash-3.webp" alt="slash">
+    </div>
+    <div class="enemy-hit">
+      <img src="img/giphy.gif" alt="hit">
+    </div>
+    <div class="player-hit">
+      <img src="img/giphy.gif" alt="hit">
+    </div>
+  </section>
+  
+  <section class="memory-game">
+    <div class="memory-card" data-framework="skull">
+      <img src="img/240_F_298275450_hsc2saQA5YljuvpJZxehKs8qpzW0tV4R-removebg-preview.png" alt="Skull" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="skull">
+      <img src="img/240_F_298275450_hsc2saQA5YljuvpJZxehKs8qpzW0tV4R-removebg-preview.png" alt="Skull" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="armor">
+      <img src="img/240_F_298275081_8w9xbsHhgasOqmIxADpcKpxPJsHBXb8V-removebg-preview.png" alt="Armor" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="armor">
+      <img src="img/240_F_298275081_8w9xbsHhgasOqmIxADpcKpxPJsHBXb8V-removebg-preview.png" alt="Armor" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card"  data-framework="crown">
+      <img src="img/1000_F_298275792_0k19n1NhHy2G5fUXmelVyEAEf1ydkbpa-removebg-preview-removebg-preview.png" alt="Crown" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="crown">
+      <img src="img/1000_F_298275792_0k19n1NhHy2G5fUXmelVyEAEf1ydkbpa-removebg-preview-removebg-preview.png" alt="Crown" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="hammer">
+      <img src="img/1000_F_298275189_0NxeuIkuNOM1eDUuaiTZP5HpxrBg5uIw-removebg-preview-removebg-preview-removebg-preview-removebg-preview.png" alt="Hammer" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="hammer">
+      <img src="img/1000_F_298275189_0NxeuIkuNOM1eDUuaiTZP5HpxrBg5uIw-removebg-preview-removebg-preview-removebg-preview-removebg-preview.png" alt="Hammer" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="ring">
+      <img src="img/240_F_298275432_pWff49ZoqUZQsu91KP5YGoFwlGgg9nFp-removebg-preview.png" alt="Ring" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="ring">
+      <img src="img/240_F_298275432_pWff49ZoqUZQsu91KP5YGoFwlGgg9nFp-removebg-preview.png" alt="Ring" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="bottle">
+      <img src="img/240_F_298275644_bmdv3P6MPfVI3kIEP7R008PHAbnOiJL9-removebg-preview.png" alt="Bottle" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="bottle">
+      <img src="img/240_F_298275644_bmdv3P6MPfVI3kIEP7R008PHAbnOiJL9-removebg-preview.png" alt="Bottle" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+  </section>
+  
+  <section class="music-section">
+    <div class="bgMusic">
+      <audio autoplay="true" src="audio/xDeviruchi - Decisive Battle.wav" loop>
+    </div>
+    <audio src="audio/mixkit-winning-a-coin-video-game-2069.wav" id="match"></audio>
+    <audio src="audio/mixkit-negative-guitar-tone-2324.wav" id="notMatch"></audio>
+    <audio src="audio/mixkit-sword-slash-swoosh-1476.mp3" id="swordSlash"></audio>
+    <audio src="audio/mixkit-ow-exclamation-of-pain-2204.wav" id="hurt"></audio>
+  </section>
+
+</body>
+</html>
