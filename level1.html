@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game RPG</title>
+  <link rel="stylesheet" href="level1.css">
+  <script src="level1.js" defer></script>
+</head>
+<body>
+
+  <section class="timeUntilAttack">
+    <div id="timer">
+        00:00
+    </div>
+    <div id="timeName">
+      Enemy Attacks In:
+    </div>
+  </section>
+
+  <section class="player&enemy">
+    <div id="enemy">
+      <h1>Enemy Health</h1>
+    </div>
+    <div id="enemyLifeBar">
+     <img src="img/240_F_298275621_pqyMxolNDu4Yyj8YhmZmy01xv0e7lXNQ-removebg-preview.png" alt="playerHealth">
+    </div>
+    <div id="enemyHealth">
+      <div>x 3</div>
+    </div>
+    <div id="player">
+      <h1>Player Health</h1>
+    </div>
+    <div id="playerLifeBar">
+      <img src="img/240_F_298275621_pqyMxolNDu4Yyj8YhmZmy01xv0e7lXNQ-removebg-preview.png" alt="enemyHealth">
+    </div>
+    <div id="playerHealth">
+      <div>x 3</div>
+    </div>
+  </section>
+
+  <section class="enemy-container">
+    <div class="enemy-image">
+      <img src="img/ac9e73075aa47ea6e792985a33d24356-removebg-preview.png" alt="">
+    </div>
+  </section>
+
+  <section class="effects">
+    <div class="slash">
+      <img src="img/Demon-awakening-effect-slash-3.webp" alt="slash">
+    </div>
+    <div class="enemy-hit">
+      <img src="img/giphy.gif" alt="hit">
+    </div>
+    <div class="player-hit">
+      <img src="img/giphy.gif" alt="hit">
+    </div>
+  </section>
+  
+  <section class="memory-game">
+    <div class="memory-card" data-framework="sword">
+      <img src="img/240_F_298274860_rhpfubHqKHGdMsIAT2Ky30vLzwqJEp4w-removebg-preview.png" alt="Sword" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="sword">
+      <img src="img/240_F_298274860_rhpfubHqKHGdMsIAT2Ky30vLzwqJEp4w-removebg-preview.png" alt="Sword" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="shield">
+      <img src="img/240_F_298275331_BOHF8AchTLaSPYfbQOdP200kAYniLpUN-removebg-preview.png" alt="Shield" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="shield">
+      <img src="img/240_F_298275331_BOHF8AchTLaSPYfbQOdP200kAYniLpUN-removebg-preview.png" alt="Shield" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card"  data-framework="potion">
+      <img src="img/240_F_298275603_JwetsRvMD4wihHzYZYJrVEpjj7oBFMaP-removebg-preview.png" alt="Potion" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="potion">
+      <img src="img/240_F_298275603_JwetsRvMD4wihHzYZYJrVEpjj7oBFMaP-removebg-preview.png" alt="Potion" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="spell">
+      <img src="img/240_F_298274772_eTNBtER3ZHtVIdMIhGKZtNcliAIpBURf-removebg-preview.png" alt="Spell" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+    <div class="memory-card" data-framework="spell">
+      <img src="img/240_F_298274772_eTNBtER3ZHtVIdMIhGKZtNcliAIpBURf-removebg-preview.png" alt="Spell" class="front-face">
+      <img src="img/240_F_298275830_T5OlRhp3DqlKs393i0v7prSroslfxulH-removebg-preview.png" alt="Scroll" class="back-face">
+    </div>
+  </section>
+
+  <section class="music-section">
+    <div class="bgMusic">
+      <audio autoplay="true" src="audio/xDeviruchi - And The Journey Begins .wav" loop>
+    </div>
+    <audio src="audio/mixkit-winning-a-coin-video-game-2069.wav" id="match"></audio>
+    <audio src="audio/mixkit-negative-guitar-tone-2324.wav" id="notMatch"></audio>
+    <audio src="audio/mixkit-sword-slash-swoosh-1476.mp3" id="swordSlash"></audio>
+    <audio src="audio/mixkit-ow-exclamation-of-pain-2204.wav" id="hurt"></audio>
+  </section>
+
+</body>
+</html>
