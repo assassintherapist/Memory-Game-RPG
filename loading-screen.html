@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title>
+  <style>
+
+    @import url('http://fonts.cdnfonts.com/css/fipps');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .title{
+      color: rgb(245, 242, 242);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      margin-left: 40px;
+    }
+
+    .loading{
+      color: rgb(245, 242, 242);
+      position: relative;
+      top: -150px;
+      margin-left: 85vh;
+      -webkit-text-stroke: 0.3vw #cd3acd;
+      text-transform: uppercase;
+    }
+
+    .loading::before{
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      color: rgb(11, 19, 19);
+      -webkit-text-stroke: 0vw #e0dcd6;
+      overflow: hidden;
+      border-right: 2px solid #0a0a0a;
+      animation: animate 3s linear infinite;
+    }
+
+    @keyframes animate{
+      0%,10%,100%
+      {
+        width: 0;
+      }
+      70%,80%
+      {
+        width: 320px;
+      }
+    }
+
+    body{
+      font-family: 'Fipps', sans-serif;
+      background: url("img/4a099b1868c8f9b30f6c22236a05e736.gif");
+      background-size: cover;
+      background-size: 58%;
+      background-position: top;
+      min-height: 100vh;
+    }
+
+    .gif{
+      position: absolute;
+      top: 38%;
+      left: 44%;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="title">You Won!</h1>
+  <h1 data-text="Please Wait" class="loading">Please Wait</h1>
+
+  <audio autoplay="true" src="audio/mixkit-sci-fi-rocket-engine-1723.wav" loop></audio>
+
+  <script>
+    setTimeout(()=>{
+      window.location.href="level2.html"
+    },5500)
+  </script>
+
+</body>
+</html>
