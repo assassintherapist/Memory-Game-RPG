@@ -1,0 +1,181 @@
+@import url('http://fonts.cdnfonts.com/css/fipps');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("img/2395544bff0ddf8217c28c645cf604e5.gif");
+  margin-top: 19%;
+  background-position: top;
+  background-repeat: repeat;
+  background-size: 120%;
+  overflow: hidden;
+}
+
+.enemy-container img{
+  position: absolute;
+  margin: auto;
+  left: 85px;
+  top: 30px;
+}
+
+.enemy-image{
+  position: absolute;
+  margin: auto;
+  top: 1%;
+  left: 35%;
+  animation: animate 0.7s ease infinite;
+}
+
+@keyframes animate{
+  0%
+  {
+    transform: translateY(2px);
+  }
+  50%
+  {
+    transform: translateY(-10px);
+  }
+}
+
+.slash{
+  position: absolute;
+  display: none;
+  top: 1%;
+  left: 30%;
+}
+
+.enemy-hit{
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 8%;
+}
+
+.player-hit{
+  position: absolute;
+  bottom: 5%;
+  right: 8%;
+  display: none;
+}
+
+.memory-game{
+  width: 700px;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.memory-card{
+  width: calc(17% - -11px);
+  height: calc(30% - 1px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+
+.memory-card:active{
+  transform: scale(80%);
+  transition: transform .3s;
+}
+
+.memory-card.flip{
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  background: url('img/dba3ceacef090f0f6812be3ec739e735.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+.front-face{
+  transform: rotateY(180deg);
+  background: url("img/a444831f3ef2b2f81e16a189a26c92b9.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#timer{
+  font-size: 70px;
+  margin: auto;
+  position: absolute;
+  left: 21%;
+  top: 15%;
+  font-family: 'Fipps', sans-serif;
+  color: aliceblue;
+}
+
+#timeName{
+  font-size: 30px;
+  margin: auto;
+  position: absolute;
+  left: 18%;
+  top: 8%;
+  font-family: 'Fipps', sans-serif;
+  color: rgb(235, 224, 224);
+}
+
+#enemyHealth{
+  position: absolute;
+  top: 14%;
+  font-size: 25px;
+  right: 5%;
+  font-family: 'Fipps', sans-serif;
+  color: aliceblue;
+}
+
+#enemyLifeBar{
+  position: absolute;
+  top: 1%;
+  right: 5%;
+}
+
+#enemy{
+  position: absolute;
+  top: 3%;
+  font-size: 15px;
+  right: 5%;
+  font-family: 'Fipps', sans-serif;
+  color: rgb(235, 224, 224);
+}
+
+#playerHealth{
+  position: absolute;
+  bottom: 8%;
+  font-size: 25px;
+  right: 5%;
+  font-family: 'Fipps', sans-serif;
+  color: aliceblue;
+}
+
+#playerLifeBar{
+  position: absolute;
+  right: 5%;
+  bottom: 1%;
+} 
+
+#player{
+  font-family: 'Fipps', sans-serif;
+  font-size: 15px; 
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  color: rgb(235, 224, 224);
+}
