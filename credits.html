@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits</title>
+
+  <style>
+    @import url('http://fonts.cdnfonts.com/css/fipps');
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Fipps', sans-serif;
+    }
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: black;
+      color: white;
+      background: url('img/wp2603481.webp');
+      background-size: 2000px;
+      background-repeat: repeat;
+      background-position: center;
+    }
+
+    .header{
+      position: relative;
+      bottom: 40%;
+      left: 15%;
+    }
+
+    button{
+      position: relative;
+      top: 40%;
+      right: 15%;
+      cursor: pointer;
+      border: none;
+      background: greenyellow;
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    button:hover{
+      transform: scale(1.5);
+    }
+  </style>
+
+</head>
+<body>
+  <div class="header">
+    <h1 class="title">Credits</h1>
+  </div>
+  
+  <div class="container">
+    <h2>Producer / Designers</h2>
+    <li>Me</li>
+    <br><br>
+    <h2>Programmer/s</h2>
+    <li>Me</li>
+    <br><br>
+    <h2>Artist</h2>
+    <li>Some random dude on google</li>
+    <li>Me</li>
+    <br><br>
+    <h2>Audio</h2>
+    <li>Some random dude on google</li>
+    <li>Me</li>
+  </div>
+
+  <button onclick="returnMenu()">Go Back</button>
+ 
+ <script>
+    function returnMenu(){
+      window.location.href="menu.html"
+    }
+  </script>
+</body>
+</html>
