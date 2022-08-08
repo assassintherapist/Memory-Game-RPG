@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Over</title>
+  <style>
+  @import url('http://fonts.cdnfonts.com/css/fipps');
+
+    *{
+      font-family: 'Fipps', sans-serif;
+    }
+
+    body{
+      background: url('img/tumblr_pjkqkw4MFm1xqepp2o1_640.gif');
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 50vh;
+      background-size: cover;
+    }
+
+    h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+      color: red;
+    }
+
+    .playAgain{
+      left: 39%;
+      position: relative;
+      border-radius: 10px;
+      border: none;
+      color: green;
+      background-color: rgba(168, 242, 166, 0.994);
+      cursor: pointer;
+    }
+
+    .playAgain:hover{
+      transform: scale(1.2);
+    }
+
+    .menu{
+      position: relative;
+      left: 45%;
+      border-radius: 10px;
+      border: none;
+      color: blueviolet;
+      background-color: rgb(205, 165, 245);
+      cursor: pointer;
+    }
+
+    .menu:hover{
+      transform: scale(1.2);
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Game Over</h1>
+  <button class="playAgain"onclick="playAgain()">Play Again?</button>
+  <button class="menu" onclick="menu()">Go Back To Menu</button>
+  
+  <audio autoplay="true" loop src="audio/xDeviruchi - Take some rest and eat some food!.wav"></audio>
+
+  <div class="image1">
+    <img src="img" alt="">
+  </div>
+  
+  
+  <script>
+
+
+
+    function playAgain(){
+      window.location.href="level1.html";
+    } 
+
+    function menu(){
+      window.location.href="menu.html"
+    }
+
+  </script>
+</body>
+</html>
